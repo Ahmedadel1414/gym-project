@@ -1,4 +1,5 @@
 interface MainButton {
+  mainButtonText: string;
   paddingX?: string;
   paddingY?: string;
 }
@@ -6,6 +7,7 @@ interface MainButton {
 const MainButton: React.FC<MainButton> = ({
   paddingX = "40px",
   paddingY = "8px",
+  mainButtonText = "Button",
 }) => {
   return (
     <>
@@ -18,7 +20,7 @@ const MainButton: React.FC<MainButton> = ({
           paddingLeft: paddingX,
         }}
       >
-        Become a Member
+        {mainButtonText}
       </button>
     </>
   );

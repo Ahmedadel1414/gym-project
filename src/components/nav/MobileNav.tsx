@@ -9,9 +9,17 @@ const MobileNav = () => {
     const mobileNavChecker = () => {
       if (mobileNav) {
         if (isHidden) {
-          mobileNav.style.display = "none";
+          mobileNav.style.transform = "translateX(100%)";
+          document.body.style.overflowY = "";
+          setTimeout(() => {
+            mobileNav.style.display = "none";
+          }, 350);
         } else {
           mobileNav.style.display = "block";
+          document.body.style.overflowY = "hidden";
+          setTimeout(() => {
+            mobileNav.style.transform = "translateX(0)";
+          }, 350);
         }
       }
     };
@@ -32,7 +40,7 @@ const MobileNav = () => {
       </section>
       <div
         id="mobile-nav"
-        className="absolute w-72 h-[100vh] bg-pink top-0 right-0 shadow-black drop-shadow-lg "
+        className="absolute z-30 w-72 h-[100vh] bg-pink top-0 right-0 shadow-black drop-shadow-lg translate-x-full transition-all duration-300"
       >
         <span
           onClick={() => {
@@ -46,7 +54,7 @@ const MobileNav = () => {
           <Nav display="block" marginX="80px" fontSize="25px" />
         </div>
         <div className="text-center">
-          <MainButton />
+          <MainButton mainButtonText="Become a Member" />
         </div>
       </div>
     </>

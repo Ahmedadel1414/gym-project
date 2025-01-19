@@ -15,8 +15,8 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="flex items-center w-full h-24 justify-between ">
-      <div className="flex gap-10 justify-center pl-10">
+    <header className="container flex items-center w-full h-24 justify-between ">
+      <div className="flex gap-10 justify-center">
         <div className="content-center">
           <img
             className="min-w-20"
@@ -33,10 +33,10 @@ const Header = () => {
           <p className="cursor-pointer font-montserrat text-lg content-center text-mainTextColor">
             Sign In
           </p>
-          <MainButton />
+          <MainButton mainButtonText="Become a Member" />
         </div>
       ) : (
-        <div className="pr-10">
+        <div>
           <MobileNav />
         </div>
       )}

@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "3rem",
+      },
       backgroundColor: {
         white: "#fff",
         pink: "#ffe1e0",
@@ -20,7 +24,6 @@ export default {
       },
     },
     screens: {
-      "2xs": "320px",
       xs: "480px",
       sm: "640px",
       md: "768px",
