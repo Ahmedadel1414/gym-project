@@ -3,8 +3,10 @@ interface Menu {
   fontSize: string;
   marginX?: string;
 }
+
+const nav = ["Home", "Benefits", "Our Classes", "Contact Us"];
+
 const Nav: React.FC<Menu> = ({ display, marginX, fontSize }) => {
-  const nav = ["Home", "Benefits", "Our Classes", "Contact Us"];
   return (
     <>
       <nav>

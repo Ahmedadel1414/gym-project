@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container flex flex-col gap-10 lg:flex-row">
         <span className="flex-[2]">
           <div className="min-w-40 pb-5">
-            <img src="/public/assets/header/Logo.png" alt="logo" />
+            <img src="/assets/header/Logo.png" alt="logo" />
           </div>
           <p className="text-mainTextColor pb-3 text-center lg:text-start">
             Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum

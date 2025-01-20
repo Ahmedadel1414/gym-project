@@ -8,7 +8,7 @@ interface ServicesCard {
 const ServicesCard: React.FC<ServicesCard> = ({
   title = "Weight Training Classes",
   paragraph = "Lorem",
-  imgSource = "/public/assets/our-services/image3.png",
+  imgSource = "/assets/our-services/image3.png",
 }) => {
   useEffect(() => {
     const servicesCard = document.querySelectorAll("#services-card");

@@ -17,11 +17,11 @@ const ContactUs = () => {
         <ContactForm />
         <div className="relative flex-[2]">
           <div className="absolute -z-10 -bottom-14 left-0 lg:-left-14">
-            <img src="/public/assets/contact-us/EvolveText.png" alt="img" />
+            <img src="/assets/contact-us/EvolveText.png" alt="img" />
           </div>
           <img
             className="w-full lg:w-[500px]"
-            src="/public/assets/contact-us/ContactUsPageGraphic.png"
+            src="/assets/contact-us/ContactUsPageGraphic.png"
             alt="image"
           />
         </div>

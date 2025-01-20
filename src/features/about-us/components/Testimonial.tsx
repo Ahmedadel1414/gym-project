@@ -4,10 +4,7 @@ const Testimonial = () => {
   return (
     <section className="flex flex-col gap-10 justify-between py-20 lg:flex-row ">
       <span className="content-center min-w-fit">
-        <img
-          src="/public/assets/about-us/BenefitsPageGraphic.png"
-          alt="image"
-        />
+        <img src="/assets/about-us/BenefitsPageGraphic.png" alt="image" />
       </span>
       <span className="block content-center">
         <h2 className="text-mainTextColor text-xl font-montserrat sm:text-3xl">
